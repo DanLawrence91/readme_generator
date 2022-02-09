@@ -1,11 +1,29 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  switch (license) {
+    case 'MIT':
+      response = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+      break;
+    case 'ISC':
+      response = '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)';
+      break;
+    case 'GNU General Public License v3':
+      response = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
+      break;
+    case 'Apache 2.0':
+      response = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
+      break;
+    default:
+      response = '';
+  }
+  return response;
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {}
-//Licnese link will go in button and also section
+//
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -17,7 +35,7 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  [${renderLicenseBadge(data.license)}](${renderLicenseLink(data.license)})
+  ${renderLicenseBadge(data.license)}
 
   ## Description
   ${data.description}
@@ -31,7 +49,6 @@ function generateMarkdown(data) {
   - [Questions](#questions)
 
   ## Installation
-  To install this project please follow the following steps:
   ${data.installation}
 
   ## Usage
@@ -48,7 +65,7 @@ function generateMarkdown(data) {
 
   ## Questions
   If there are any questions regarding this project please contact me through my email - ${data.email}. 
-  I can also be found with further contact information on my GitHub profile which is [GitHub Profile](#https://github.com/${data.github})
+  Or please visit my GitHub profile which has further contact information - [${data.github}](#https://github.com/${data.github})
 `;
 }
 
