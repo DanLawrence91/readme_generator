@@ -29,7 +29,7 @@ const questions = [
     {
         type: 'list',
         name: 'license',
-        message: 'Please choose a license. Leave blank and press enter if no license chosen',
+        message: 'Please choose a license. Please select no license if there is no license and this section will not generate',
         choices: ['MIT', 'ISC', 'GNU General Public License v3', 'Apache 2.0', 'Other', 'No license'],
     },
     {
