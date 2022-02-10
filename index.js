@@ -30,12 +30,13 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Please choose a license. Leave blank and press enter if no license chosen',
-        choices: ['MIT', 'ISC', 'GNU General Public License v3', 'Apache 2.0'],
+        choices: ['MIT', 'ISC', 'GNU General Public License v3', 'Apache 2.0', 'No license'],
     },
     {
         type: 'input',
         name: 'contributing',
         message: 'Please give guidelines on how to contribute to this project',
+        default: 'Contributions are welcome via pull requests. If anything major is to be proposed, please open an issue first to discuss what you would like to change.'
     },
     {
         type: 'input',
@@ -55,7 +56,7 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+function writeToFile() {
     return inquirer.prompt(questions)
         .then((data) => fs.writeFileSync('README.md', readme.generateMarkdown(data)))
 }
@@ -68,4 +69,4 @@ function init() {
 }
 
 // Function call to initialize app
-init();
+init(); 

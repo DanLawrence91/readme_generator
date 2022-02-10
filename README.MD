@@ -1,9 +1,9 @@
-# fdfdf
+# Test
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  
 
   ## Description
-  dfdfddg
+  test
   
   ## Table of Contents
   - [Installation](#installation)
@@ -17,16 +17,17 @@
   npm i (project name)
 
   ## Usage
-  retvrt
+  test
 
-  ##License      This project is MIT licensed, please see the badge at the top of the page
+  ## License
+  
 
   ## Contributing
-  hhhh
+  Contributions are welcome via pull requests. If anything major is to be proposed, please open an issue first to discuss what you would like to change.
 
   ## Tests
-  dfe
+  test
 
   ## Questions
-  If there are any questions regarding this project please contact me through my email - dfv. 
-  Or please visit my GitHub profile which has further contact information - [vtre](#https://github.com/vtre)
+  If there are any questions regarding this project please contact me through my email - test. 
+  Or please visit my GitHub profile which has further contact information - [DanLawrence91](#https://github.com/DanLawrence91)

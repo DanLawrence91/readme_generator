@@ -15,7 +15,7 @@ function renderLicenseBadge(license) {
     case 'Apache 2.0':
       response = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
       break;
-    default:
+    case 'No license':
       response = '';
       break;
   }
@@ -63,7 +63,7 @@ function renderLicenseSection(license) {
     case 'Apache 2.0':
       licenseSection = 'This project is Apache 2.0 licensed, please see the badge at the top of the page';
       break;
-    default:
+    case 'No license':
       licenseSection = '';
       break;
   }
