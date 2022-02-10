@@ -56,7 +56,7 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile() {
+function writeToFile(fileName, data) {
     return inquirer.prompt(questions)
         .then((data) => fs.writeFileSync('README.md', readme.generateMarkdown(data)))
 }

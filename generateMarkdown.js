@@ -107,7 +107,7 @@ function generateMarkdown(data) {
 
   ## Questions
   If there are any questions regarding this project please contact me through my email - ${data.email}. 
-  Or please visit my GitHub profile which has further contact information - [${data.github}](#https://github.com/${data.github})
+  Or please visit my GitHub profile which has further contact information - [${data.github}](https://github.com/${data.github})
 `;
 }
 
