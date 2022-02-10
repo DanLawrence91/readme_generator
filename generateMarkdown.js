@@ -52,20 +52,16 @@ function renderLicenseSection(license) {
   let licenseSection;
   switch (license) {
     case 'MIT':
-      licenseSection = '##License\
-      This project is MIT licensed, please see the badge at the top of the page';
+      licenseSection = 'This project is MIT licensed, please see the badge at the top of the page';
       break;
     case 'ISC':
-      licenseSection = '##License\
-      This project is ISC licensed, please see the badge at the top of the page';
+      licenseSection = 'This project is ISC licensed, please see the badge at the top of the page';
       break;
     case 'GNU General Public License v3':
-      licenseSection = '##License\
-      This project is GPL v3 licensed, please see the badge at the top of the page';
+      licenseSection = 'This project is GPL v3 licensed, please see the badge at the top of the page';
       break;
     case 'Apache 2.0':
-      licenseSection = '##License\
-      This project is Apache 2.0 licensed, please see the badge at the top of the page';
+      licenseSection = 'This project is Apache 2.0 licensed, please see the badge at the top of the page';
       break;
     default:
       licenseSection = '';
@@ -100,6 +96,7 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
 
+  ## License
   ${renderLicenseSection(data.license)}
 
   ## Contributing
@@ -114,4 +111,6 @@ function generateMarkdown(data) {
 `;
 }
 
-module.exports = generateMarkdown;
+module.exports = {
+  generateMarkdown,
+}
